@@ -1,0 +1,48 @@
+
+<html>
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        .countain {
+            background-color: rgba(250, 235, 215, 0.966);
+            border-radius: 25px;
+            color: rgb(129, 7, 7);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+
+        }
+
+        .sit {
+            background-color: rgba(136, 25, 25, 0.966);
+            color: rgb(8, 8, 8);
+
+        }
+    </style>
+    <title> Test-Result</title>
+    <div class="sit">
+        <h1>
+            <center>Test-Result</center>
+        </h1>
+        <div class="countain">
+            <center>
+                <h3 id="result">
+                    <span> </span>
+                </h3>
+                <form method="POST" , action="{{url_for('predict')}}">
+                    Study_time:<input type="number" step="0.01" name='a'><br><br>
+                    <button type="submit" value="predict">Submit</button>
+            </center>
+            </form>
+        </div>
+    </div>
+
+</html>
